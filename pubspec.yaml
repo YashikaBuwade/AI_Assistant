@@ -1,0 +1,73 @@
+name: ai_assistant
+description: "AI Assistant - A Flutter-based app."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+# --------------------
+# Dependencies
+# --------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # iOS styled icons
+  cupertino_icons: ^1.0.8
+
+# for using lottie animation
+  lottie: ^3.3.1
+
+#  for hive database:
+
+  hive: ^4.0.0-dev.2
+  isar_flutter_libs: ^4.0.0-dev.13
+
+  #  for Accessing storage path
+  path_provider: ^2.1.0
+
+  #   for state management
+  get: ^4.6.6
+
+#   for custom animation
+  flutter_animate: ^4.2.0+1
+
+#   for API call
+  http: ^1.1.0
+
+#   For AI Image generation
+  dart_openai: ^5.0.0
+  cached_network_image: ^3.3.0
+
+  # App icon launcher
+  icons_launcher: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# --------------------
+# Flutter Config
+# --------------------
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/lottie/
+
+# --------------------
+# App Icon Configuration (icons_launcher)
+# --------------------
+icons_launcher:
+  image_path: "assets/images/logo.png"  # Your custom icon path
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
